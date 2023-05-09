@@ -1,12 +1,12 @@
 deployment:
-  name: tcapp-deployment
+  name: APP_roles
   namespace: tc
   replicaCount: 2
 
 image:
-  repository: pranavpk24/java_ex:1
+  repository: devopsmay1117/APP:v1
   pullPolicy: Always
-  containerName: tc-webapp
+  containerName: webapp_role
   imagePullSecrets: dockerhub
   containerPort: 3080
   
